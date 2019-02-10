@@ -3,8 +3,8 @@ import pytablewriter
 from spotipy.oauth2 import SpotifyClientCredentials
 from dateutil import parser
 
-CLIENT_ID = '2a11980c181a46fdabe39171317d2e27'
-CLIENT_SECRET = '411431fd483c4902a210d635cca3ede7'
+CLIENT_ID = 'fill me!'
+CLIENT_SECRET = 'fill me!'
 PLAYLIST_URI = 'spotify:user:ftaheri96:playlist:0c6vHqSegYiJYLegscZmte'
 
 
