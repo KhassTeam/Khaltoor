@@ -1,3 +1,4 @@
+import os
 import spotipy
 import pytablewriter
 from spotipy.oauth2 import SpotifyClientCredentials
@@ -58,7 +59,7 @@ def get_md_link(text, url):
     return '[%s](%s)' % (text, url)
 
 
-def write_table(tracks):
+def write_table(tracks, output_path):
     writer = pytablewriter.MarkdownTableWriter()
     writer.header_list = ['Title', 'Artist', 'Album', 'User', 'Added at']
     value_matrix = []
@@ -73,14 +74,29 @@ def write_table(tracks):
         ]
         value_matrix.append(cur)
     writer.value_matrix = value_matrix
-    with open('tracks.md', 'w') as f:
+    with open(output_path, 'w') as f:
         writer.stream = f
         writer.write_table()
 
 
+def merge_md_files(inputs, output):
+    with open(output, 'w') as out_file:
+        for inp in inputs:
+            with open(inp, 'r') as in_file:
+                out_file.writelines(in_file.readlines())
+
+
 def main():
-    tracks = get_playlist_tracks()
-    write_table(tracks)
+    tracks_temp_file = 'tracks.md'
+    try:
+        tracks = get_playlist_tracks()
+        write_table(tracks, tracks_temp_file)
+        merge_md_files(inputs=['Intro.md', tracks_temp_file], output='README.md')
+    except Exception as e:
+        print(e)
+    finally:
+        if os.path.exists(tracks_temp_file):
+            os.remove(tracks_temp_file)
 
 
 if __name__ == '__main__':
