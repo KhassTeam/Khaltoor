@@ -5,8 +5,8 @@ This is the official Khaltoor playlist repository. Khaltoor playlist is availabl
 * [Apple Music](https://itunes.apple.com/us/playlist/khaltoor/idpl.u-38oWXm4sg6NrVg)
 
 With these memorable addresses, you can share the joy with your friends with almost no hassle:
-* [khaltoor.dashagh.club](https://khaltoor.dashagh.club) - Spotify
-* [ikhaltoor.dashagh.club](https://ikhaltoor.dashagh.club) - Apple Music
+* [Khaltoor.dashagh.club](https://khaltoor.dashagh.club) - Spotify
+* [iKhaltoor.dashagh.club](https://ikhaltoor.dashagh.club) - Apple Music
 
 ## Contribution
 
