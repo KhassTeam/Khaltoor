@@ -4,7 +4,7 @@ This is the official Khaltoor playlist repository. Khaltoor playlist is availabl
 * [Spotify](https://open.spotify.com/user/ftaheri96/playlist/0c6vHqSegYiJYLegscZmte?si=BkLFR5k7TliXRUVkO3o7sw)
 * [Apple Music](https://itunes.apple.com/us/playlist/khaltoor/idpl.u-38oWXm4sg6NrVg)
 
-With this memorable addresses, you can share the joy with your friends with almost no hassle:
+With this memorable address, you can share the joy with your friends with almost no hassle:
 * [www.khaltoor.org](http://khaltoor.org) - Spotify
 
 ## Contribution
